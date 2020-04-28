@@ -1,3 +1,4 @@
-resource "aws_vpc" "Gaurav" {
-  cidr_block = "10.0.0.0/16"
+module "vpc_for_Gaurav" {
+  source  = "terraform-aws-modules/vpc/aws//examples/simple-vpc"
+  version = "2.33.0"
 }
